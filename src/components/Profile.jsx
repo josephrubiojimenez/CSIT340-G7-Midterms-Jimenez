@@ -22,7 +22,7 @@ const [rate, setRate] = useState(500);
     return(
         <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
         <div>
-          <Bio name="JOSEPH RUBIO JIMENEZ" username="@josephrubiojimenez" />
+          <Bio name="Joseph Rubio Jimenez" username="@josephrubiojimenez" />
           <StatCard value={followers} label={rate} />
         </div>
 

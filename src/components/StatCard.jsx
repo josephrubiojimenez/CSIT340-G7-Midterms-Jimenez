@@ -1,8 +1,5 @@
 
-import { useState } from "react";
-
 export default function StatCard({value, label}){
- const [rate, setRate] = useState(500);
 
     return(
         <div className="mt-6 flex gap-6">
