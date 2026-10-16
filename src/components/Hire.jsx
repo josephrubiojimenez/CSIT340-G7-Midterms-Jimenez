@@ -5,7 +5,7 @@ const [hours, setHours] = useState(0)
 
 
 const handleAddHour = () => {
-    setHours((hours) = hours + 1);
+    setHours(hours + 1);
 }
 
 const handleClear = () => {
@@ -19,8 +19,8 @@ const handleClear = () => {
                     Hire me for {hours} hours
                 </h3>
                 <p className = "mt-1 text-xl">
-                    Total <span className = "font-bold text-[#FA8112]"> PHP {hours * props.rate}</span>
-                </p>
+                    Total: <span className = "font-bold text-[#FA8112]"> PHP {hours * props.rate}</span>
+                </p> 
             </div>
             <div className = "flex gap-4">
                 <button className ="cursor-pointer rounded-lg bg-[#FA8112] px-8 py-3 text-xl font-bold text-[#222222]" onClick = {handleAddHour}>Add hour</button>

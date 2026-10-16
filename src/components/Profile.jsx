@@ -1,6 +1,7 @@
 import Bio from './Bio.jsx'
 import StatCard from './StatCard.jsx'
 import { useState } from 'react'
+import Hire from './Hire.jsx'
 
 export default function Profile(){
 
@@ -20,10 +21,14 @@ const [rate, setRate] = useState(500);
     setRate(500);
   }
     return(
+        <>
         <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
         <div>
           <Bio name="Joseph Rubio Jimenez" username="@josephrubiojimenez" />
-          <StatCard value={followers} label={rate} />
+          <div className="mt-6 flex gap-6">
+            <StatCard value={followers} label="Followers" />
+            <StatCard value={rate} label="PHP per hour" />
+          </div>
         </div>
 
         <div className="flex gap-4">
@@ -47,5 +52,7 @@ const [rate, setRate] = useState(500);
           </button>
         </div>
       </div>
+        <Hire />
+      </>
     )
 }
