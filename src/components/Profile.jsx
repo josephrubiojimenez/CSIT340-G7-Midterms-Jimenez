@@ -1,9 +1,10 @@
 import Bio from './Bio.jsx'
 import StatCard from './StatCard.jsx'
+import Controls from './Controls.jsx'
 import { useState } from 'react'
 import Hire from './Hire.jsx'
 
-export default function Profile(){
+export default function Profile({handleFollow, handleAddRate, handleReset}){
 
 const [followers, setFollowers] = useState(0);
 const [rate, setRate] = useState(500);
@@ -32,27 +33,10 @@ const [rate, setRate] = useState(500);
         </div>
 
         <div className="flex gap-4">
-          <button
-            className="cursor-pointer rounded-lg bg-[#FA8112] px-8 py-3 text-xl font-bold text-[#222222]"
-            onClick={handleFollow}
-          >
-            Follow
-          </button>
-          <button
-            className="cursor-pointer rounded-lg bg-[#222222] px-8 py-3 text-xl font-bold text-[#FAF3E1]"
-            onClick={handleAddRate}
-          >
-            Add rate
-          </button>
-          <button
-            className="cursor-pointer rounded-lg border-2 border-[#222222] px-8 py-3 text-xl font-bold"
-            onClick={handleReset}
-          >
-            Reset
-          </button>
+            <Controls handleFollow={handleFollow} handleAddRate={handleAddRate} handleReset={handleReset} />
         </div>
       </div>
-        <Hire />
+        <Hire props = {{rate}}/>
       </>
     )
 }

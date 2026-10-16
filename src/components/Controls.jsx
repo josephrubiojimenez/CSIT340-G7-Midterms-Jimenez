@@ -1,4 +1,4 @@
-export default function Profile() {
+export default function Controls({handleFollow, handleAddRate, handleReset}){
 
     return(
         <div className="flex gap-4">

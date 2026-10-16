@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Hire(props){
+export default function Hire({props}){
 const [hours, setHours] = useState(0)
 
 
@@ -13,7 +13,7 @@ const handleClear = () => {
 }
 
     return(
-        <div className = "mx-20 flex items-center justify-between rounded-xl bg-[#222222] p-6 text-[#FAF3E1">
+        <div className = "mx-20 mt-8 flex items-center justify-between rounded-xl bg-[#222222] p-6 text-[#FAF3E1]">
             <div>
                 <h3 className="text-2xl font-bold">
                     Hire me for {hours} hours
