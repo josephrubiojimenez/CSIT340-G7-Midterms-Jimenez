@@ -12,7 +12,7 @@ function handleStarPortfolio() {
               className="cursor-pointer rounded-lg border-2 border-[#222222] px-4 py-1 text-xl"
               onClick={handleStarPortfolio}
             >
-              ★ {1}
+              ★ {handleStarPortfolio}
             </button>
           </div>
           <p className="mt-2 text-xl">{description}</p>
