@@ -1,8 +1,23 @@
-import Bio from '/components/Bio.jsx'
-// import StatCard from '/components/StatCard.jsx'
+import Bio from './Bio.jsx'
+import StatCard from './StatCard.jsx'
+import { useState } from 'react'
 
 export default function Profile(){
 
+const [followers, setFollowers] = useState(0);
+
+ function handleFollow() {
+    setFollowers(followers + 1);
+  }
+
+   function handleAddRate() {
+    setRate(rate + 100);
+  }
+
+   function handleReset() {
+    setFollowers(0);
+    setRate(500);
+  }
     return(
         <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
         <div>
