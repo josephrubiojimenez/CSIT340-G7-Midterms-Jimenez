@@ -6,13 +6,9 @@ import Footer from "./components/Footer";
 
 function App() {
  
-  const [rate, setRate] = useState(500);
   const [portfolioStars, setPortfolioStars] = useState(0);
   const [todoStars, setTodoStars] = useState(0);
   const [dotfilesStars, setDotfilesStars] = useState(0);
-
-
-
 
   function handleStarTodo() {
     setTodoStars(todoStars + 1);
@@ -28,8 +24,6 @@ function App() {
       <Profile />
       <Repositories />
       <Footer />
-    
-      
     </div>
   );
 }

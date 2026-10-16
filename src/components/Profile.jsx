@@ -5,6 +5,7 @@ import { useState } from 'react'
 export default function Profile(){
 
 const [followers, setFollowers] = useState(0);
+const [rate, setRate] = useState(500);
 
  function handleFollow() {
     setFollowers(followers + 1);
@@ -22,7 +23,7 @@ const [followers, setFollowers] = useState(0);
         <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
         <div>
           <Bio name="JOSEPH RUBIO JIMENEZ" username="@josephrubiojimenez" />
-          <StatCard value={1} label="{1} per hour/s" />
+          <StatCard value={followers} label={rate} />
         </div>
 
         <div className="flex gap-4">
