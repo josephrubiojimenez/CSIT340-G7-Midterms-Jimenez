@@ -46,7 +46,7 @@ function App() {
       <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
         <div>
           <header>
-            <h2 className="text-6xl font-bold">YOUR NAME</h2>
+            <h2 className="text-6xl font-bold">JOSEPH RUBIO JIMENEZ</h2>
             <p className="mt-1 text-2xl text-[#FA8112]">
               @YOUR_GITHUB_USERNAME
             </p>
